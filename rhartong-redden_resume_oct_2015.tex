@@ -1,0 +1,284 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper, margin=1.0in,  bottom=.8in]{geometry}
+
+%\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+%\usepackage[T1]{fontenc}
+%\usepackage{textcomp}
+%\usepackage{tgpagella}
+%\usepackage{showframe}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+\newcommand{\bs}{\textbullet \, }  % Textbullet and a space
+
+
+
+% and the actual content starts here
+\begin{document}
+
+{\raggedright 
+\LARGE{\bf Rory Hartong-Redden}\\}
+%\end{raggedright} 
+{\raggedleft 
+%4651 N Greenview Ave Apt 409, Chicago, IL 60640 \textbar\/ 
+Chicago, IL \textbar\/ Mobile: 925.297.9484 \textbar\/ roryhr@gmail.com \textbar\/   github.com/roryhr\\}
+\hrule
+
+
+\vspace{-0.4em}
+\subsection*{Summary}
+
+\begin{centering} 
+``Be so good they can't ignore you" \\ -- Steve Martin  \\ \vspace{0.9em}   
+At heart, I'm a physicist who enjoys answering questions with data. \\
+\end{centering}
+
+\vspace{0.4em}
+	
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Skill Summary}
+\begin{indentsection}{\parindent}
+\begin{tabular}{p{0.5\linewidth}   p{0.5\linewidth} } 
+%\textbf{CAD Software:}		& SolidWorks, AutoCAD, Abaqus, L-Edit \\
+%\textbf{Lab Skills:}			& 80/20\textsuperscript{\textregistered} Structural Framing,  Analog Electronics, Calibration, Cleanroom  \\
+%\textbf{Machine Shop:}		& Mill, Lathe, Micrometer, Band Saw \\
+
+%\textbf{Web:}  		& Ruby on Rails, WordPress		& \textbf{Database:}  	& Access, SQL \\ 
+\textbf{Languages:}  	  MATLAB, Python			& \textbf{Toolkits:}  	 scikit-learn, Pandas, SQLAlchemy \\  
+%\textbf{Software:}  	&  Mathematica,  SAS 		& \textbf{OS:}  		& Windows, Linux  \\
+
+%\textbf{Software:}  	&  Mathematica,  SAS 		& \textbf{CAD:} 	 	& SolidWorks, AutoCAD \\ 
+%\textbf{MS Office:}  	& Excel, Word, PowerPoint   		& \textbf{Database:}  	& SQLAlchemy \\ 
+%\textbf{Social:}		& Facebook (admin), Twitter, \newline Instagram, Tumblr 	&\textbf{Misc:}  		&  Comedy, \LaTeX \\
+
+
+
+%\textbf{Microsoft Office:}  	& Word, PowerPoint, Excel \\
+%\textbf{Google:}		 	& Gmail, Drive, Docs, Sheets \\
+%\textbf{Social Media:}		& Facebook (admin), Twitter, Instagram, Tumblr \\
+
+%\textbf{Fields:}  			& Fluid Dynamics,  Classical Mechanics, Applied Math, Astronomy \\
+\end{tabular}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Projects}
+
+\begin{itemize}
+	\parskip=-0.1em
+	\item
+	\headerrow
+		{\textbf{Data Science and Computer Science Self-Study}}
+		{Chicago, IL}	\\
+	\headerrow
+		{\emph{Home}}
+		{\emph{May 2015-- Pres}}
+	\begin{itemize*}
+		\item Currently working through \emph{Bayesian Methods for Hackers}
+		\item Using the tools in scikit-learn on datasets from Kaggle and elsewhere
+		\item Exploring scientific programming environments: Python, R, SAS
+		\item Completed the \emph{Ruby on Rails Tutorial} and built a Twitter clone with  Ruby on Rails, Heroku, Git
+	\end{itemize*}
+
+	\parskip=-0.1em
+	\item
+	\headerrow
+		{\textbf{Master's Thesis: Faraday Waves Experiment}}
+		{Santa Barbara, CA}	\\
+	\headerrow
+		{\emph{Krechetnikov Fluid Physics Lab, Dept.\ of Mechanical Engineering}}
+		{\emph{Dec 2013--Jun 2014}}
+	\begin{itemize*}
+		\item Implemented a novel   3D fluid surface measurement using MATLAB for image analysis
+%		\item Designed a bespoke experimental apparatus using SolidWorks to study Faraday Waves  and produced a  set of engineering drawings, validation tests, and documentation as part of my thesis
+%		\item Personally fabricated a prototype in the college machine shop and had the final design parts CNC  machined 
+%		\item Sourced \$20k in  lab equipment including a Labworks 75lb shaker, 2 accelerometers, and 2 Parker actuators all interfacing with a NI PCIe DAQ and LabVIEW VI running on a dedicated computer
+
+	\end{itemize*}
+	\item
+	\headerrow
+		{\textbf{Arctic Sea Ice Modeling}}
+		{Northwestern University}	\\
+	\headerrow
+		{\emph{Prof.~Mary Silber, Dept.~of Applied Mathematics}}
+		{\emph{Sep 2011--Jan 2012}}
+	\begin{itemize*}
+		\item Coded  models of arctic sea ice  in MATLAB for the study of climate change
+	\end{itemize*}
+%	\item
+%	\headerrow
+%		{\textbf{X-Ray Microscopy}}
+%		{Argonne National Lab}	\\
+%	\headerrow
+%		{\emph{Bionanoprobe, Advanced Photon Source, Sector 21}}
+%		{\emph{Nov 2011}}
+%	\begin{itemize*}
+%		\item Used the image analysis tools in MATLAB  to measure the thermal stability of a new instrument
+%	\end{itemize*}
+
+%	\item
+%	\headerrow
+%		{\textbf{Programmable Flow Generator}}
+%		{Goleta, CA} \\
+%	\headerrow
+%		{\emph{LaunchPoint Technologies}}
+%		{\emph{Sept 2009--June 2010}}
+%	\begin{itemize*}
+%		\item Contributed modeling expertise on team of fellow engineering students   working on a  fluidic loop 
+%	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{Bachelor's Thesis: Drop Splash Experiment}}
+		{Santa Barbara, CA} \\
+	\headerrow
+		{\emph{Krechetnikov Fluid Physics Lab, Dept.~of Mechanical Engineering}}
+		{\emph{Jul 2009--Oct 2010}}
+	\begin{itemize*}
+%		\item Investigated the physics of splashes that occur when a liquid droplet impacts a wetted surface
+% 		\item Performed stereo triangulation in MATLAB, reduced the  the 3D data, and searched for patterns   with my new theory of pattern identification
+		\item Published a peer-reviewed article\footnote{Hartong--Redden, R.\ \& Krechetnikov, R. {\em Pattern identification in systems S(1) symmetry.} Phys.\ Rev.\ E. 2011.}  
+and gave a talk at a national conference\footnote{$63^{\mathrm{rd}}$ Annual Meeting of the APS Division of Fluid Dynamics} 
+on the experimental and theoretical advances I developed that may have solved a 100-year puzzle in fluid dynamics
+	\end{itemize*}
+	\item
+	\headerrow
+		{\textbf{Transient Optical Sky Survey}}
+		{Santa Barbara, CA}	\\
+	\headerrow
+		{\emph{Lubin Lab, Dept.~of Physics}}
+		{\emph{Sep 2008--Jun 2009}}
+	\begin{itemize*}
+		\item Collaborated on the MATLAB/C  data pipeline that processed 1GB of images per night
+	\end{itemize*}
+\end{itemize}
+
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Work Experience}
+
+\begin{itemize}
+	\parskip=-0.1em
+	\item
+	\headerrow
+		{\textbf{Harold Washington College}}
+		{Chicago, IL}
+	\headerrow
+		{\emph{Adjunct Faculty}}
+		{\emph{Feb 2015--May 2015}}
+	\begin{itemize*}
+%		\item Gave 2 lectures a week  for a descriptive astronomy class 
+		\item Incorporated the latest discoveries in astronomy and the new \emph{Cosmos} into my lessons
+	\end{itemize*}
+
+%	\item
+%	\headerrow
+%		{\textbf{98.7WFMT}}
+%		{Chicago, IL}
+%	\headerrow
+%		{\emph{Relevant Tones Intern}}
+%		{\emph{Nov 2014--May 2015}}
+%	\begin{itemize*}
+%%		\item Improved the web site's search ranking by updating the WordPress and Facebook pages 
+%		\item Increased the number of Facebook page likes by 11\% and improved the website's search ranking
+%	\end{itemize*}
+%	\item
+%	\headerrow
+%		{\textbf{University of California, Santa Barbara}}
+%		{Santa Barbara, CA} \\
+%	\headerrow
+%		{\emph{Teaching Assistant }}
+%		{\emph{Dec 2012--June 2014}}
+%	\begin{itemize*}
+%%		\item Engineering design of experimental apparatus 
+%%		\item Introduced machining concepts on the mill and lathe to students in the engineering machine shop
+%%		\item Supervised students as they built parts for the class project with zero accidents
+%		\item Showed engineering students how to safely work in a machine shop
+%	\end{itemize*}
+%
+%	\item
+%	\headerrow
+%		{\textbf{Northwestern University}}
+%		{Evanston, IL}\\
+%	\headerrow
+%		{\emph{Teaching Assistant}}
+%		{\emph{Sept 2010--Mar 2012}}
+%	\begin{itemize*}
+%		\item Prepared  quizzes and held office hours to answer questions one-on-one for introductory physics 
+%	\end{itemize*}
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+\begin{itemize}
+	\parskip=-0.1em
+	\item 
+	\headerrow
+		{\textbf{University of California, Santa Barbara}}
+		{Santa Barbara, CA}
+	\headerrow
+		{\emph{MS  Mechanical Engineering}}
+		{\emph{Dec 2014}}
+%	\begin{itemize*}
+%%		\vspace{-0.2em}
+%		\item Thesis: {\em Experimental apparatus for the study of Faraday waves on time-varying domains}
+%	\end{itemize*}
+	\item 
+	\headerrow
+		{\textbf{Northwestern University}}
+		{Evanston, IL}
+	\headerrow
+		{\emph{Graduate study in Physics \& Astronomy}}
+		{\emph{Sept 2010--Mar 2012}}
+	\item 
+	\headerrow
+		{\textbf{University of California, Santa Barbara}}
+		{Santa Barbara, CA}	\\
+	\headerrow
+		{\emph{BS Physics \&  Mechanical Engineering}}
+		{\emph{June 2010}}
+%	\headerrow
+%		{\emph{B.S. in }}
+%		{\emph{June 2010}}
+	\begin{itemize*}
+%		\vspace{-0.2em}
+%		\item  Thesis: {\em Experimental and theoretical study of pattern identification in physical systems with circular symmetry}
+		\item Graduated with honor in both degrees,  GPA: 3.7/4.0
+		\item Dean's List 11/12 quarters. 
+		\item Member: Tau Beta Pi engineering honor society
+	\end{itemize*}
+\end{itemize}
+
+\end{document}
