@@ -5,8 +5,6 @@
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
-% indentsection style, used for sections that aren't already in lists
-% that need indentation to the level of all text in the document
 \newenvironment{indentsection}[1]%
 {\begin{list}{}%
 	{\setlength{\leftmargin}{#1}}%
@@ -29,60 +27,45 @@
 	#2 \\
 \end{tabular*}}
 
-\newcommand{\bs}{\textbullet \, }  % Textbullet and a space
-
+%\newcommand{\bs}{\textbullet \, }  % Textbullet and a space
 
 
 \begin{document}
 
-{\raggedright 
-\LARGE{\bf Rory Hartong-Redden}\\}
+{\raggedright \LARGE \bf Rory Hartong-Redden\\}
 
 {\raggedleft 
-San Franicisco, CA \textbar\/ Mobile: 925.297.9484 \textbar\/ roryhr@gmail.com \textbar\/   github.com/roryhr\\}
+San Franicisco, CA \textbar\/ 
+roryhr@gmail.com \textbar\/ 
+Cell: 925.297.9484 \textbar\/ 
+roryhr.github.io \textbar\/   
+github.com/roryhr\\}
 \hrule
 
-
-\vspace{-0.4em}
 \subsection*{Summary}
 
+\vspace{-0.4em}
+
 \begin{centering}  
-Physicist turned data scientist turned competent coder\\
+data scientist, physicist, coder, and all-around nice guy\\
 \end{centering}
 
 \vspace{0.4em}
 
 \hrule
-\vspace{-0.4em}
 \subsection*{Skill Summary}
 \begin{indentsection}{\parindent}
 \begin{tabular}{p{0.5\linewidth}   p{0.5\linewidth} } 
-%\textbf{CAD Software:}		& SolidWorks, AutoCAD, Abaqus, L-Edit \\
-%\textbf{Lab Skills:}			& 80/20\textsuperscript{\textregistered} Structural Framing,  Analog Electronics, Calibration, Cleanroom  \\
-%\textbf{Machine Shop:}		& Mill, Lathe, Micrometer, Band Saw \\
+	\textbf{Languages:}  Python, MATLAB 	
+	& \textbf{Dev Tools:}  Git, Heroku, AWS \\  
 
-%\textbf{Web:}  		& Ruby on Rails, WordPress		& \textbf{Database:}  	& Access, SQL \\ 
-\textbf{Languages:}  Python, MATLAB 			& \textbf{Dev Tools:}  Git, Heroku, AWS \\  
-\textbf{Data:} Pandas, SQLAlchemy, SQL 	& \textbf{Machine Learning:}  Keras, scikit-learn, XGBoost  \\
-
-
-%\textbf{Software:}  	&  Mathematica,  SAS 		& \textbf{CAD:} 	 	& SolidWorks, AutoCAD \\ 
-%\textbf{MS Office:}  	& Excel, Word, PowerPoint   		& \textbf{Database:}  	& SQLAlchemy \\ 
-%\textbf{Social:}		& Facebook (admin), Twitter, \newline Instagram, Tumblr 	&\textbf{Misc:}  		&  Comedy, \LaTeX \\
-
-
-
-%\textbf{Microsoft Office:}  	& Word, PowerPoint, Excel \\
-%\textbf{Google:}		 	& Gmail, Drive, Docs, Sheets \\
-%\textbf{Social Media:}		& Facebook (admin), Twitter, Instagram, Tumblr \\
-
-%\textbf{Fields:}  			& Fluid Dynamics,  Classical Mechanics, Applied Math, Astronomy \\
+	\textbf{Data:} Pandas, SQLAlchemy, SQL 	
+	& \textbf{Machine Learning:}  Keras, scikit-learn, XGBoost  \\
 \end{tabular}
 \end{indentsection}
 
 
 \hrule
-\vspace{-0.4em}
 \subsection*{Work Experience}
 \begin{itemize}
 	\parskip=-0.1em
@@ -91,11 +74,11 @@ Physicist turned data scientist turned competent coder\\
 		{\textbf{Startup.ML}}
 		{San Francisco, CA}
 	\headerrow
-		{\emph{Fellow}}
+		{\emph{Machine Learning Fellow}}
 		{\emph{Dec 2015--Present}}
 	\begin{itemize*}
-		\item Deployed a Python app to heroku which ingests 800MB a day from a live websocket feed into a Postgres database (learning asynchronous programming along the way)
-		\item Backtesting algorithmic trading models with Zipline
+		\item Trained industry-standard machine learning models for currency trading 
+		\item Backtested and optimized trading algorithms
 	\end{itemize*}
 \end{itemize}
 
@@ -153,51 +136,49 @@ Physicist turned data scientist turned competent coder\\
 
 
 \hrule
-\vspace{-0.4em}
 \subsection*{Projects}
-
 \begin{itemize}
 	\parskip=-0.1em
 	\item
 	\headerrow
-		{\textbf{Self-Directed Study}}
+		{\textbf{Personal}}
 		{Chicago, IL}	\\
 	\headerrow
 		{\emph{Home}}
 		{\emph{May 2015--Present}}
 	\begin{itemize*}
 %		\item Currently working through \emph{Bayesian Methods for Hackers}
-		\item Studying and applying machine learning methods  in Kaggle competitions
-		\item Learned the basics of object-oriented programming with Ruby and Python
-		\item Deployed a Twitter-like app in Rails to Heroku by following the \emph{Ruby on Rails Tutorial} 
+		\item Participated in the Walmart, Yelp, and Winton Kaggle competitions
+		\item Learned object-oriented programming with Ruby and Python
+		\item Deployed a Twitter clone in Rails to Heroku by following the \emph{Ruby on Rails Tutorial} 
 	\end{itemize*}
 
-%	\parskip=-0.1em
-%	\item
-%	\headerrow
-%		{\textbf{Master's Thesis: Faraday Waves Experiment}}
-%		{Santa Barbara, CA}	\\
-%	\headerrow
-%		{\emph{Krechetnikov Fluid Physics Lab, Dept.\ of Mechanical Engineering}}
-%		{\emph{Dec 2013--Jun 2014}}
-%	\begin{itemize*}
-%		\item Implemented a novel   3D fluid surface measurement using MATLAB for image processing 
-%%		\item Designed a bespoke experimental apparatus using SolidWorks to study Faraday Waves  and produced a  set of engineering drawings, validation tests, and documentation as part of my thesis
-%%		\item Personally fabricated a prototype in the college machine shop and had the final design parts CNC  machined 
-%%		\item Sourced \$20k in  lab equipment including a Labworks 75lb shaker, 2 accelerometers, and 2 Parker actuators all interfacing with a NI PCIe DAQ and LabVIEW VI running on a dedicated computer
-%	\end{itemize*}
-	
-	
+	\parskip=-0.1em
 	\item
 	\headerrow
-		{\textbf{Arctic Sea Ice Modeling}}
-		{Northwestern University}	\\
+		{\textbf{Master's Thesis: Faraday Waves Experiment}}
+		{Santa Barbara, CA}	\\
 	\headerrow
-		{\emph{Prof.~Mary Silber, Dept.~of Applied Mathematics}}
-		{\emph{Sep 2011--Jan 2012}}
+		{\emph{Krechetnikov Fluid Physics Lab, Dept.\ of Mechanical Engineering}}
+		{\emph{Dec 2013--Jun 2014}}
 	\begin{itemize*}
-		\item Coded  models of arctic sea ice  in MATLAB for the study of climate change
+		\item Implemented a novel   3D fluid surface measurement using MATLAB for image processing 
+%		\item Designed a bespoke experimental apparatus using SolidWorks to study Faraday Waves  and produced a  set of engineering drawings, validation tests, and documentation as part of my thesis
+%		\item Personally fabricated a prototype in the college machine shop and had the final design parts CNC  machined 
+%		\item Sourced \$20k in  lab equipment including a Labworks 75lb shaker, 2 accelerometers, and 2 Parker actuators all interfacing with a NI PCIe DAQ and LabVIEW VI running on a dedicated computer
 	\end{itemize*}
+	
+	
+%	\item
+%	\headerrow
+%		{\textbf{Arctic Sea Ice Modeling}}
+%		{Northwestern University}	\\
+%	\headerrow
+%		{\emph{Prof.~Mary Silber, Dept.~of Applied Mathematics}}
+%		{\emph{Sep 2011--Jan 2012}}
+%	\begin{itemize*}
+%		\item Coded  models of arctic sea ice  in MATLAB for the study of climate change
+%	\end{itemize*}
 %	\item
 %	\headerrow
 %		{\textbf{X-Ray Microscopy}}
@@ -229,10 +210,8 @@ Physicist turned data scientist turned competent coder\\
 		{\emph{Jul 2009--Oct 2010}}
 	\begin{itemize*}
 %		\item Investigated the physics of splashes that occur when a liquid droplet impacts a wetted surface
-% 		\item Performed stereo triangulation in MATLAB, reduced the  the 3D data, and searched for patterns   with my new theory of pattern identification
-		\item Published a peer-reviewed article\footnote{Hartong--Redden, R.\ \& Krechetnikov, R. {\em Pattern identification in systems S(1) symmetry.} Phys.\ Rev.\ E. 2011.}  
-and gave a talk at a national conference\footnote{$63^{\mathrm{rd}}$ Annual Meeting of the APS Division of Fluid Dynamics} 
-on the experimental and theoretical advances I developed that may have solved a 100-year puzzle in fluid dynamics
+ 		\item Performed stereo triangulation in MATLAB, reduced the  the 3D data, and searched for patterns using my theory of pattern identification
+		\item Published a peer-reviewed article\footnote{Hartong--Redden, R.\ \& Krechetnikov, R. {\em Pattern identification in systems S(1) symmetry.} Phys.\ Rev.\ E. 2011.} on the experimental and theoretical advances I developed that may have solved a 100-year puzzle in fluid dynamics
 	\end{itemize*}
 	\item
 	\headerrow
@@ -242,15 +221,12 @@ on the experimental and theoretical advances I developed that may have solved a 
 		{\emph{Lubin Lab, Dept.~of Physics}}
 		{\emph{Sep 2008--Jun 2009}}
 	\begin{itemize*}
-		\item Collaborated on the MATLAB/C image processing pipeline that processed 1GB of data per night
+		\item Collaborated on the MATLAB/C data pipeline that processed 1GB of images per night
 	\end{itemize*}
 \end{itemize}
 
 
-
-
 \hrule
-\vspace{-0.4em}
 \subsection*{Education}
 \begin{itemize}
 	\parskip=-0.1em
@@ -277,17 +253,14 @@ on the experimental and theoretical advances I developed that may have solved a 
 		{\textbf{University of California, Santa Barbara}}
 		{Santa Barbara, CA}	\\
 	\headerrow
-		{\emph{BS Physics \&  Mechanical Engineering}}
+		{\emph{BS Physics \&  BS Mechanical Engineering}}
 		{\emph{June 2010}}
-%	\headerrow
-%		{\emph{B.S. in }}
-%		{\emph{June 2010}}
 	\begin{itemize*}
 %		\vspace{-0.2em}
 %		\item  Thesis: {\em Experimental and theoretical study of pattern identification in physical systems with circular symmetry}
 		\item Graduated with honor in both degrees,  GPA: 3.7/4.0
 		\item Dean's List 11/12 quarters. 
-		\item Member: Tau Beta Pi engineering honor society
+%		\item Member: Tau Beta Pi engineering honor society
 	\end{itemize*}
 \end{itemize}
 
