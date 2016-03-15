@@ -1,6 +1,6 @@
 \documentclass[10pt,letterpaper]{article}
-\usepackage[letterpaper, margin=1.0in,  bottom=.7in]{geometry}
-
+\usepackage[letterpaper, margin=1.0in,  bottom=.6in]{geometry}
+\usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{mdwlist}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
@@ -27,8 +27,6 @@
 	#2 \\
 \end{tabular*}}
 
-%\newcommand{\bs}{\textbullet \, }  % Textbullet and a space
-
 
 \begin{document}
 
@@ -39,17 +37,14 @@ San Franicisco, CA \textbar\/
 roryhr@gmail.com \textbar\/ 
 Cell: 925.297.9484 \textbar\/ 
 roryhr.github.io \textbar\/   
-github.com/roryhr\\}
+\href{https://github.com/roryhr}{github.com/roryhr}\\}
 \hrule
 
 \subsection*{Summary}
-
-\vspace{-0.4em}
-
+%\vspace{-0.4em}
 \begin{centering}  
 data scientist, physicist, all-around nice guy\\
 \end{centering}
-
 \vspace{0.4em}
 
 \hrule
@@ -79,11 +74,10 @@ data scientist, physicist, all-around nice guy\\
 		{\emph{Machine Learning Fellow}}
 		{\emph{Dec 2015--Present}}
 	\begin{itemize*}
-		\item Developed a production FinTech data pipeline for applying machine learning to trading
-		\item Backtested and deployed a live algorithm
+		\item Developed a FinTech data pipeline for applying machine learning to algorithmic trading
+		\item Wrote Python scripts to setup a PostgreSQL database on Heroku and ingest streaming data
 	\end{itemize*}
 \end{itemize}
-
 
 \begin{itemize}
 	\parskip=-0.1em
@@ -108,13 +102,11 @@ data scientist, physicist, all-around nice guy\\
 		{\emph{Research Assistant}}
 		{\emph{Dec 2013--Jun 2014}}
 	\begin{itemize*}
-		\item Incorporated an image processing technique for cheap 3D high speed mm-resolution measurement over a surface area of $225 \,\mathrm{cm}^2$
+		\item Incorporated a recent image processing technique for cheap 3D high speed mm-resolution measurement over a surface area of $225 \,\mathrm{cm}^2$ 		\href{https://github.com/roryhr/profilometry}{[profilometry repository]}
 %		\item Designed a bespoke experimental apparatus using SolidWorks to study Faraday Waves  and produced a  set of engineering drawings, validation tests, and documentation as part of my thesis
 %		\item Personally fabricated a prototype in the college machine shop and had the final design parts CNC  machined 
 %		\item Sourced \$20k in  lab equipment including a Labworks 75lb shaker, 2 accelerometers, and 2 Parker actuators all interfacing with a NI PCIe DAQ and LabVIEW VI running on a dedicated computer
 	\end{itemize*}
-	
-
 \end{itemize}
 
 
@@ -131,13 +123,12 @@ data scientist, physicist, all-around nice guy\\
 		{\emph{May 2015--Present}}
 	\begin{itemize*}
 %		\item Currently working through \emph{Bayesian Methods for Hackers}
-		\item Participated in the Walmart, Yelp, and Winton Kaggle competitions
+		\item Participating in the Yelp Kaggle competition
+		\href{https://github.com/roryhr/yelp_kaggle}{[yelp\_kaggle repository]}
+
 %		\item Learned object-oriented programming with Ruby and Python
 		\item Deployed a Twitter clone in Rails on Heroku by following the \emph{Ruby on Rails Tutorial} 
-	\end{itemize*}
-
-
-	
+	\end{itemize*}	
 	
 %	\item
 %	\headerrow
@@ -180,7 +171,8 @@ data scientist, physicist, all-around nice guy\\
 		{\emph{Jul 2009--Oct 2010}}
 	\begin{itemize*}
 %		\item Investigated the physics of splashes that occur when a liquid droplet impacts a wetted surface
- 		\item Performed stereo triangulation in MATLAB, reduced the  the 3D data, and searched for patterns using my theory of pattern identification
+ 		\item Performed stereo triangulation in MATLAB, reduced the  the 3D data, and searched for patterns using my theory of pattern identification 
+ 		\href{https://github.com/roryhr/drop_splash}{[drop\_splash repository]}
 		\item Published a peer-reviewed article\footnote{Hartong--Redden, R.\ \& Krechetnikov, R. {\em Pattern identification in systems S(1) symmetry.} Phys.\ Rev.\ E. 2011.} on the experimental and theoretical advances I developed that may have solved a 100-year puzzle in fluid dynamics
 	\end{itemize*}
 	\item
