@@ -1,0 +1,258 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper, margin=1.0in,  bottom=.8in]{geometry}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{mdwlist}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+
+\begin{document}
+{\raggedright \LARGE \bf Curriculum Vit\ae}
+\newline
+\hrule
+\subsection*{Rory Hartong-Redden}
+\begin{indentsection}{\parindent}
+San Franicisco, CA   \\
+Email: roryhr@gmail.com \\
+Mobile: 925.297.9484 \\
+Website: \href{roryhr.github.io}{roryhr.github.io} \\
+Github: \href{https://github.com/roryhr}{github.com/roryhr}
+\end{indentsection}
+
+\hrule
+\subsection*{Education}
+\begin{itemize}
+	\parskip=-0.1em
+	\item 
+	\headerrow
+		{\textbf{University of California, Santa Barbara}}
+		{Santa Barbara, CA}
+	\headerrow
+		{\emph{MS  Mechanical Engineering}}
+		{\emph{Dec 2014}}
+	\begin{itemize*}
+		\item Thesis: {\em Experimental apparatus for the study of Faraday waves on time-varying domains}
+	\end{itemize*}
+	\item 
+	\headerrow
+		{\textbf{Northwestern University}}
+		{Evanston, IL}
+	\headerrow
+		{\emph{Graduate study: PhD Physics}}
+		{\emph{Sept 2010--Mar 2012}}
+	\item 
+	\headerrow
+		{\textbf{University of California, Santa Barbara}}
+		{Santa Barbara, CA}	\\
+	\headerrow
+		{\emph{BS Physics \&  BS Mechanical Engineering}}
+		{\emph{June 2010}}
+	\begin{itemize*}
+		\item  Thesis: {\em Experimental and theoretical study of pattern identification in physical systems with circular symmetry}
+		\item Graduated with honor in both degrees,  GPA: 3.7/4.0
+		\item Dean's List 11/12 quarters
+		\item Member: Tau Beta Pi engineering honor society
+	\end{itemize*}
+\end{itemize}
+
+\hrule
+\subsection*{Skills}
+\begin{indentsection}{\parindent}
+\begin{tabular}{p{0.5\linewidth}   p{0.5\linewidth} } 
+	\textbf{Languages:}  Python, MATLAB, Ruby, C
+	& \textbf{Dev Tools:}  Git, Heroku, PyCharm, AWS, Emacs \\  
+
+	\textbf{Data:} SQL, PostgreSQL, HDF5
+	& \textbf{Machine Learning:} Neural Networks, Trees  \\
+	
+	\textbf{Beautiful Typesetting:} \LaTeX
+	& \textbf{Academic Strengths:} Physics, Applied Math \\
+	
+	\multicolumn{2}{l}{\textbf{Python Stack:} Conda, Keras, matplotlib, NumPy, Pandas, PyTables, scikit-learn, SQLAlchemy} \\
+\end{tabular}
+\end{indentsection}
+
+\hrule
+\subsection*{Work Experience}
+\begin{itemize}
+	\parskip=-0.1em
+	\item
+	\headerrow
+		{\textbf{Startup.ML}}
+		{San Francisco, CA}
+	\headerrow
+		{\emph{Machine Learning Fellow}}
+		{\emph{Dec 2015--Apr 2016}}
+	\begin{itemize*}
+		\item Developed a production FinTech data pipeline for currency trading using industry-standard machine learning methods
+		\item Investigating how Reinforcement Learning can be leveraged to revolutionize  algorithmic trading
+	\end{itemize*}
+\end{itemize}
+
+\begin{itemize}
+	\parskip=-0.1em
+	\item
+	\headerrow
+		{\textbf{Harold Washington College}}
+		{Chicago, IL}
+	\headerrow
+		{\emph{Adjunct Faculty}}
+		{\emph{Feb 2015--May 2015}}
+	\begin{itemize*}
+		\item Gave 2 lectures a week  for a descriptive astronomy course 
+		\item Incorporated the latest discoveries in astronomy and the new \emph{Cosmos} into my lessons
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{University of California, Santa Barbara}}
+		{Santa Barbara, CA} \\
+	\headerrow
+		{\emph{Teaching Assistant }}
+		{\emph{Dec 2012--June 2014}}
+	\begin{itemize*}
+%		\item Engineering design of experimental apparatus 
+		\item Introduced machining concepts on the mill and lathe to students in the engineering machine shop
+		\item Supervised students as they built parts for the class project with zero accidents
+%		\item Showed engineering students how to safely work in a machine shop
+	\end{itemize*}
+	
+	
+		\item
+		\headerrow
+			{\textbf{Northwestern University}}
+			{Evanston, IL}\\
+		\headerrow
+			{\emph{Teaching Assistant}}
+			{\emph{Sept 2010--Mar 2012}}
+		\begin{itemize*}
+			\item Prepared  quizzes and held office hours to answer questions one-on-one for introductory physics 
+		\end{itemize*}
+\end{itemize}
+%\newpage
+%\hrule
+\subsection*{Projects}
+\begin{itemize}
+	\parskip=-0.1em
+	\item
+	\headerrow
+		{\textbf{Kaggle}}
+		{San Francisco, CA}	\\
+	\headerrow
+		{\emph{Home}}
+		{\emph{May 2015--Present}}
+	\begin{itemize*}
+%		\item Currently working through \emph{Bayesian Methods for Hackers}
+		\item Coded a deep residual convolution network in Keras/TensorFlow for multi-label classification for the Yelp Kaggle competition
+		\href{https://github.com/roryhr/yelp_kaggle}{[yelp\_kaggle repository]}
+		\item Learned object-oriented programming with Ruby and Python
+		\item Deployed a Twitter clone in Rails on Heroku by following the \emph{Ruby on Rails Tutorial} 
+	\end{itemize*}	
+	\item
+	\headerrow
+		{\textbf{Master's Thesis: Krechetnikov Fluid Physics Lab}}
+		{Santa Barbara, CA}	\\
+	\headerrow
+		{\emph{Research Assistant}}
+		{\emph{Dec 2013--Jun 2014}}
+	\begin{itemize*}
+		\item Incorporated a recent image processing technique for cheap 3D high speed mm-resolution measurement over a surface area of $225 \,\mathrm{cm}^2$ 		\href{https://github.com/roryhr/profilometry}{[profilometry repository]}
+	\end{itemize*}
+		
+	\item
+	\headerrow
+		{\textbf{X-Ray Microscopy}}
+		{Argonne National Lab}	\\
+	\headerrow
+		{\emph{Bionanoprobe, Advanced Photon Source, Sector 21}}
+		{\emph{Nov 2011}}
+		\begin{itemize*}
+			\item Used the image analysis tools in MATLAB  to measure the thermal stability of a new instrument
+		\end{itemize*}
+		
+	\item
+	\headerrow
+		{\textbf{Arctic Sea Ice Modeling}}
+		{Northwestern University}	\\
+	\headerrow
+		{\emph{Prof.~Mary Silber, Dept.~of Applied Mathematics}}
+		{\emph{Sep 2011--Jan 2012}}
+	\begin{itemize*}
+		\item Coded  models of arctic sea ice  in MATLAB for the study of climate change
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{Programmable Flow Generator}}{Goleta, CA} \\
+	\headerrow
+		{\emph{LaunchPoint Technologies}}{\emph{Sep 2009--Jun 2010}}
+	\begin{itemize*}
+		\item Contributed modeling expertise on team of fellow engineering students   working on a  fluidic loop 
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{Bachelor's Thesis: Drop Splash Experiment}}
+		{Santa Barbara, CA} \\
+	\headerrow
+		{\emph{Krechetnikov Fluid Physics Lab, Dept.~of Mechanical Engineering}}
+		{\emph{Jul 2009--Oct 2010}}
+	\begin{itemize*}
+		\item Investigated the physics of splashes that occur when a liquid droplet impacts a wetted surface
+ 		\item Performed stereo triangulation in MATLAB, reduced the  the 3D data, and searched for patterns using my theory of pattern identification 
+ 		\href{https://github.com/roryhr/drop_splash}{[drop\_splash repository]}
+		\item Published a peer-reviewed article$^3$ on the experimental and theoretical advances I developed that may have solved a 100-year puzzle in fluid dynamics
+	\end{itemize*}
+		
+	\item
+	\headerrow
+		{\textbf{Transient Optical Sky Survey}}{Santa Barbara, CA}	\\
+	\headerrow
+		{\emph{Lubin Lab, Dept.~of Physics}}{\emph{Sep 2008--Jun 2009}}
+	\begin{itemize*}
+		\item Collaborated on the MATLAB/C data pipeline that processed 1GB of images per night
+	\end{itemize*}
+		
+\end{itemize}
+
+
+%\newpage
+\hrule
+\subsection*{Publications}
+
+\begin{indentsection}{\parindent}
+\begin{enumerate}
+	\item R. Hartong-Redden.~\emph{Experimental apparatus for the study of Farady waves on time-dependent domains}. Master's thesis, University of California, Santa Barbara, 2014.
+	\item E. Hadjiyska, G. Hughes, P. Lubin, S. Taylor, R. Hartong-Redden, and J. Zierten.~\emph{The transient optical sky survey data pipeline}. New Astronomy, 2013.
+	\item R. Hartong-Redden and R. Krechetnikov.~{\em Pattern identification in systems with S(1) symmetry}. Physical Review E, 2011.
+	\item R. Hartong-Redden and R. Krechetnikov.~{\em Experimental and theoretical study of pattern identification in physical systems on circular domains}. Annual Meeting of the APS Division of Fluid Dynamics, 2010.
+	\item R. Hartong-Redden.~{\em Experimental and theoretical study of pattern identification in systems with O(2) symmetry}. Bachelor's thesis, University of California, Santa Barbara, 2010.
+
+\end{enumerate}
+\end{indentsection}
+\hrule
+
+
+\end{document}
