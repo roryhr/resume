@@ -11,14 +11,6 @@
 }
 {\end{list}}
 
-% opposite of above; bump a section back toward the left margin
-\newenvironment{unindentsection}[1]
-{\begin{list}{}%
-	{\setlength{\leftmargin}{-0.5#1}}
-	\item[]%
-}
-{\end{list}}
-
 % format two pieces of text, one left aligned and one right aligned
 \newcommand{\headerrow}[2]{
 \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
@@ -50,18 +42,16 @@ data scientist, data engineer, lapsed physicist\\
 
 \hrule
 \subsection*{Tools}
-%I use Python for everything from a small scripts that modify a couple of files on my local computer to a PySpark script that processes terabytes of data.
-%I'm open to other tech stacks -- this is just the one I know.
 \begin{indentsection}{\parindent}
 \begin{tabular}{p{0.5\linewidth}   p{0.5\linewidth}} 
-	Python, SQL
+	Python, SQL, Oozie, Airflow, Kafka, Flume
 	& Machine Learning, Computer Vision, Deep Learning \\
 
 	Spark, Postgres, Hadoop, PostGIS, ArcMap 
 	& Jupyter Notebooks, Git, Bash \\ 
 	
 	\multicolumn{2}{l}{
-		\textbf{Python Packages:} Pandas, matplotlib, NumPy, OpenCV, scikit-learn,
+		\textbf{Python Packages:} Pandas, PySpark, matplotlib, OpenCV, scikit-learn,
 							TensorFlow, requests, Flask} \\
 \end{tabular}
 \end{indentsection}
@@ -69,8 +59,17 @@ data scientist, data engineer, lapsed physicist\\
 \hrule
 \subsection*{Work}
 \begin{itemize}
+	\jobitem{Runtastic (acquired by Adidas)}{Linz, Austria}
+		     {Data Engineer}{Oct 2018--Present}
+	\begin{itemize*}
+		\item Maintain and improve the data pipeline which feeds analytics dashboards and analysts
+		\item Streaming with Flume and Kafka 
+	\end{itemize*}
+\end{itemize}
+
+\begin{itemize}
 	\jobitem{Allstate}{Menlo Park, CA}
-		     {Data Scientist}{Jul 2016--Present}
+		     {Data Scientist}{Jul 2016--Sep 2018}
 	\begin{itemize*}
 		\item Support and guide research partnership with the Stanford Intelligent Systems Lab
 		\item Data engineering and munging with Python and Spark
@@ -95,7 +94,6 @@ data scientist, data engineer, lapsed physicist\\
 	\end{itemize*}
 \end{itemize}
 
-
 \hrule
 \subsection*{Projects}
 \begin{itemize}
@@ -110,11 +108,12 @@ data scientist, data engineer, lapsed physicist\\
 	\begin{itemize*}
 		\item Published a peer-reviewed article on the experimental and theoretical advances I developed that may have solved a 100-year-old puzzle in fluid dynamics
 	\end{itemize*}
-	\jobitem{Transient Optical Sky Survey}{UC Santa Barbara}
-		    {Lubin Lab, Dept.~of Physics}{Sep 2008--Jun 2009}
-	\begin{itemize*}
-		\item Image processing with a Matlab/C data pipeline that analyzed 1GB of images taken each night
-	\end{itemize*}
+	
+%	\jobitem{Transient Optical Sky Survey}{UC Santa Barbara}
+%		    {Lubin Lab, Dept.~of Physics}{Sep 2008--Jun 2009}
+%	\begin{itemize*}
+%		\item Image processing with a Matlab/C data pipeline that analyzed 1GB of images taken each night
+%	\end{itemize*}
 \end{itemize}
 
 \hrule
@@ -122,8 +121,8 @@ data scientist, data engineer, lapsed physicist\\
 \begin{itemize}
 	\jobitem{University of California, Santa Barbara}{Santa Barbara, CA}
 		    {MS  Mechanical Engineering}{Dec 2014}
-	\jobitem{Northwestern University}{Evanston, IL}
-		    {PhD Physics Candidate}{Sept 2010--Mar 2012}
+%	\jobitem{Northwestern University}{Evanston, IL}
+%		    {PhD Physics Candidate}{Sept 2010--Mar 2012}
 	\jobitem{University of California, Santa Barbara}{Santa Barbara, CA}	
 		    {BS Physics \&  BS Mechanical Engineering}{June 2010}
 \end{itemize}
