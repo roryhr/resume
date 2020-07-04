@@ -1,5 +1,4 @@
-Here's my resume which I made in LaTeX and compiled into a pdf.
+My resume is written in LaTeX and typeset to a pdf.
 
-Feel free to take a look under the hood and use it yourself.
-Generally speaking I've opted to keep things simple and deferred
-to TeX's judgment regarding layout and spacing.
+Feel free to take a look under the hood and use it yourself, I tried to keep things simple. 
+I use the TeXShop editor which comes with the [TeX Live](https://www.tug.org/texlive/) distribution.
